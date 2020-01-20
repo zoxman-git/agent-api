@@ -1,0 +1,36 @@
+
+This application is intended to be an initial first draft at an Agent API.
+
+
+Some of the assumptions that were made during the development of the API are...
+
+1. An initial draft of the API was the priority here, the intent is to iterate on the solution based on requirements, time, etc, etc
+
+2. Other improvements would be made based on hosting environment, database choices, etc
+- E.g. Hosted in AWS in the cloud, or elsewhere, we might add nginx as a reverse proxy and configure API response compression
+- E.g. Performance improvements regarding data access could see significant improvements as a result of limiting resultsets in SQL Server for example
+
+3. Reading/writing to files as data store is meant to be used to prototype and prove out this concept
+- Significant performance gains will be realized when moving towards a different storage system
+- If files are meant to be used as the storage mechanism for the system more discussion should be had around the requirements and viability of this approach
+
+
+Some dicussion topics to review are...
+
+1. Endpoints meet business needs, too many, too few, explore OData or other means to allow for more ad-hoc querying, etc?
+
+2. Clarify request/response payload requirements and insure we are limiting ourselves to the data that is required to improve performance, etc
+
+3. Does any of the data lend itself to caching and what might our eviction strategy be if so?
+
+4. Validation business rules to implement
+
+5. Exception handling and logging - level of verbosity, types of events we would like to capture, etc?
+
+6. Discussion regarding data and expectations that it will be accurate, how much effort to expend in accounting for bad data?
+
+7. Do we have a level of unit test covervage we are targeting, what other test efforts are we making/how much effort to invest here?
+
+8. Authentication and authorization and security of the system need to be discussed and reviewed
+
+9. Other! Get feedback from other developers and stakeholders regarding this proof of concept and areas to focus on improving.

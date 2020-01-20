@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/business-layer/bin/Debug/netcoreapp3.1
+/business-layer/obj
+/business-layer-tests/obj
+/business-layer-tests/bin/Debug/netcoreapp3.1
+/data-access-layer/obj
+/data-access-layer/bin/Debug/netcoreapp3.1
+/web-app/obj
+/web-app/bin/Debug/netcoreapp3.1
